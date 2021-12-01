@@ -6,13 +6,13 @@ function preload(){
     img=loadImage('dog_cat.jpg');
 };
 function setup(){
-    canvas=createCanvas(350,350);
+    canvas=createCanvas(640,420);
     canvas.center();
     objectdetector=ml5.objectDetector('cocossd',modelLoaded);
     document.getElementById("status").innerHTML="Status : detecting object";
 };
 function draw(){
-    image(img,0,0,350,350);
+    image(img,0,0,640,420);
     
   //  stroke("FF0000");
   if(Status != ""){
